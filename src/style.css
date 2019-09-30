@@ -1,9 +1,105 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 /* Body */
 
-/* News Stories */
-.news-stories__items {
-	display: flex;
+body {
+    background: #f2f2f2;
 }
+
+
+/* News Stories */
+
+.news-stories {
+    margin: 20px 10px;
+    background: #ffffff;
+}
+
+.news-stories__header {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-stories__items {
+    display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+    .news-stories__items {
+        flex-direction: column;
+    }
+}
+
+.news-stories__item {
+    display: flex;
+    padding: 0 10px;
+}
+
+.news-stories__item__image {
+    flex: 1;
+    padding: 0 5px;
+}
+
+.news-stories__item__image img {
+    max-width: 100%;
+}
+
+.news-stories__item__content {
+    flex: 2;
+}
+
+.news-stories__item__text {
+    color: #555555;
+}
+
+.news-stories__item__header {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.news-stories__item__text {
+    font-size: 13px;
+    font-family: 'Roboto', sans-serif;
+}
+
 
 /* Latest Rankings */
 
+.latest-rankings {
+    margin: 20px 10px;
+    background: #ffffff;
+    overflow-x: auto;
+}
+
+.latest-rankings__header {
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+.latest-rankings__table__row--head {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+}
+
+.latest-rankings__table__row--head th,
+.latest-rankings__table__row td {
+    padding: 5px 15px;
+}
+
+.latest-rankings__table__row__first-child {
+    width: 40vw;
+    text-align: left;
+}
+
+.latest-rankings__table__row__image {
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
